@@ -1,0 +1,277 @@
+=========================================================
+ANDROID AUTOMATION SETUP GUIDE
+=========================================================
+
+Project Name:
+Android Automation - Santa Browser
+
+Automation Tool:
+- Appium
+
+Programming Language:
+- JavaScript
+
+Editor:
+- Visual Studio Code
+
+Operating System:
+- Windows 11
+
+=========================================================
+SOFTWARE REQUIRED
+=========================================================
+
+1. Install Node.js
+Download:
+https://nodejs.org/
+
+Verify Installation:
+node -v
+npm -v
+
+---------------------------------------------------------
+
+2. Install Java JDK
+
+Verify Installation:
+java -version
+
+Set JAVA_HOME Environment Variable.
+
+---------------------------------------------------------
+
+3. Install Android Studio
+
+Download:
+https://developer.android.com/studio
+
+During installation install:
+- Android SDK
+- SDK Platform
+- Platform Tools
+- Android Emulator
+
+Verify Installation:
+adb version
+
+---------------------------------------------------------
+
+4. Install Visual Studio Code
+
+Download:
+https://code.visualstudio.com/
+
+=========================================================
+INSTALL APPIUM
+=========================================================
+
+Initialize Node Project
+
+npm init -y
+
+Install Appium
+
+npm install appium
+
+Install Appium Driver
+
+appium driver install uiautomator2
+
+Verify Driver
+
+appium driver list
+
+Install WebdriverIO
+
+npm install webdriverio
+
+Install Appium Client
+
+npm install wd
+
+=========================================================
+START APPIUM SERVER
+=========================================================
+
+Start Server
+
+appium
+
+or
+
+npx appium
+
+Default Server
+
+http://127.0.0.1:4723
+
+=========================================================
+ANDROID DEVICE SETUP
+=========================================================
+
+Enable Developer Options
+
+Enable USB Debugging
+
+Connect Android Device
+
+Verify Device
+
+adb devices
+
+Output Example
+
+List of devices attached
+RZ8NXXXXXXXX device
+
+=========================================================
+PROJECT LOCATION
+=========================================================
+
+Project Path
+
+C:\Users\DELL\OneDrive\Desktop\Appium.js
+
+Open Project
+
+cd C:\Users\DELL\OneDrive\Desktop\Appium.js
+
+=========================================================
+PROJECT STRUCTURE
+=========================================================
+
+Appium.js
+
+│
+├── node_modules
+├── package.json
+├── package-lock.json
+├── Notes.txt
+├── testdailycheckin.js
+├── testdailyusage.js
+├── testleaderboard.js
+├── testMonthlyusage.js
+├── testmyrewards.js
+├── testrewardscategory.js
+├── testspaces.js
+└── testweeklyusage.js
+
+=========================================================
+USEFUL COMMANDS
+=========================================================
+
+Start Appium Server
+
+appium
+
+Check Connected Device
+
+adb devices
+
+Check Android Version
+
+adb shell getprop ro.build.version.release
+
+Install Dependencies
+
+npm install
+
+Run Test
+
+node testdailycheckin.js
+
+Run Rewards Category Test
+
+node testrewardscategory.js
+
+Run My Rewards Test
+
+node testmyrewards.js
+
+=========================================================
+DEPENDENCIES USED
+=========================================================
+
+appium
+
+webdriverio
+
+wd
+
+=========================================================
+AUTOMATED MODULES
+=========================================================
+
+✔ Rewards Category
+
+✔ Daily Check-in
+
+✔ Daily Usage
+
+✔ Weekly Usage
+
+✔ Monthly Usage
+
+✔ My Rewards
+
+✔ Leaderboard
+
+✔ Spaces
+
+=========================================================
+GIT COMMANDS
+=========================================================
+
+Check Status
+
+git status
+
+Add Files
+
+git add .
+
+Commit Changes
+
+git commit -m "Updated Android automation scripts"
+
+Push to GitHub
+
+git push origin master
+
+Pull Latest Changes
+
+git pull origin master
+
+Clone Repository
+
+git clone <repository-url>
+
+=========================================================
+BEST PRACTICES
+=========================================================
+
+• Ensure Appium server is running before executing tests.
+
+• Verify the Android device is connected using "adb devices".
+
+• Keep USB Debugging enabled.
+
+• Use meaningful test names.
+
+• Commit changes regularly to GitHub.
+
+=========================================================
+AUTHOR
+=========================================================
+
+Project:
+Santa Browser Android Automation
+
+Automation Framework:
+Appium + JavaScript
+
+Version Control:
+Git & GitHub
+
+Documentation Version:
+1.0
